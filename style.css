@@ -1,0 +1,122 @@
+/* style.css /*
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2b2b2b;　/*　チャコールブラック　*/
+	color: #d3d3d3;           　/*　ライトグレー　*/
+	/*　和の雰囲気を出すため、明朝体系のフォントを優先　*/
+	font-family: "Sawaradi Mincho", "Yu Mincho", "MS PMincho", serif;
+	line-height: 1.8;
+}
+
+header- {
+	background-color: #3e2723; /*　ダークブラウン　*/
+	padding: 1.2rem 0;
+	border-bottom: 1px solid #4e342e;
+}
+
+.header-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+header h1{
+	margin: 0;
+	font-size: 1.8rem;
+	letter-spacing: 0.1em;
+    color: #d3d3d3;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 30px
+}
+
+nav a {
+	text-decoration: none;
+	color: #d3d3d3;
+    font: 500;
+}
+
+/*　ヒーローエリア　*/
+.hero {
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero h2 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+/* メニュー */
+.menu-section {
+	max-width: 800px;
+	margin: 60px auto;
+	padding: 20px;
+}
+
+.menu-title {
+	text-align: centnr;
+	border-bottom: 2px solid #3e2723;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+
+.menu-category {
+	margin-bottm: 50px;
+}
+
+.menu-category h3 {
+	color: #a1887f;
+	border-left: 4px solid #3e2723;
+	padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/*コミュニティ（Discod）*/
+.community {
+	background-color: 1a1a1a;
+	padding: 80px 20px;
+	text-align: center;
+	border-top: 1px solid #3e2723;
+}
+
+.biscord-btn {
+	display: inline-block;
+	backgroumd-color: #5865F2;
+	color: white;
+	padding: 15px 40px;
+	text-descoratin: none;
+	boder-radius: 30px; /* 角を丸くしてモダンに */
+	font-weight: bold;
+	margin-top: 25px;
+	transition: 0.3s;
+}
+
+.discord-btn:hover {
+	background-color: #4752c4;
+	transform: translateY(-2px);
+}
+
+.btn {
+	border: 1px solid #d3d3d3;
+	color: #d3d3d3;
+	padding: 10px  30px;
+}
+
+footer {
+	text-aligon: center;
+	padding: 30px;
+	font-size: 0.9rem;
+}
