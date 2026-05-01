@@ -16,6 +16,7 @@ header .container {
     flex-direction: column; /* 縦に並べる */
     align-items: center;    /* ★これでロゴやメニューが中央に */
     text-align: center;
+     background-color: #5A1E24;
 }
 
 /* 2. ナビゲーション（メニュー）の項目を中央に寄せる */
@@ -119,7 +120,7 @@ section {
 
 /* ===== フッター ===== */
 footer {
-    background-color: #111111;
+    background-color: #0F2A1D;
     color: #aaaaaa;
     text-align: center;
     padding: 20px;
