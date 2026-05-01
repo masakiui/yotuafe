@@ -1,122 +1,133 @@
-/* style.css /*
-
+/* style.css */
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #2b2b2b;　/*　チャコールブラック　*/
-	color: #d3d3d3;           　/*　ライトグレー　*/
-	/*　和の雰囲気を出すため、明朝体系のフォントを優先　*/
-	font-family: "Sawaradi Mincho", "Yu Mincho", "MS PMincho", serif;
-	line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #0d0d0d; /* 黒 */
+    color: #c9a96a; /* 金 */
+    line-height: 1.7;
 }
 
-header- {
-	background-color: #3e2723; /*　ダークブラウン　*/
-	padding: 1.2rem 0;
-	border-bottom: 1px solid #4e342e;
+/* ===== コンテナ（中央寄せ） ===== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.header-container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 30px;
+/* ===== ヘッダー ===== */
+header {
+    background-color: #0f2a1f; /* 深緑 */
+    color: #e5e5e5; /* 白 */
+    padding: 15px 0;
 }
 
-header h1{
-	margin: 0;
-	font-size: 1.8rem;
-	letter-spacing: 0.1em;
-    color: #d3d3d3;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* ロゴ */
+.logo {
+    margib: 0 40px;
+}
+
+.rogo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    heigth: 90px;
+    border: 2px solid #c9a96a;
+    border-radius: 50%;
+    color:c9a96a;
+    text-decoration: none;
+    font-size: 2px;
+}
+
+/* ナビ */
 nav ul {
-	list-style: none;
-	display: flex;
-	gap: 30px
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-	text-decoration: none;
-	color: #d3d3d3;
-    font: 500;
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/*　ヒーローエリア　*/
-.hero {
-	height: 70vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+nav a:hover {
+    opacity: 0.7;
 }
 
-.hero h2 {
-	font-size: 2.5rem;
-	margin-bottom: 20px;
+/* ===== 見出し ===== */
+h1, h2, h3 {
+    color: #ffd700; /* 少し明るい金 */
+    margin-bottom: 10px;
 }
 
-/* メニュー */
-.menu-section {
-	max-width: 800px;
-	margin: 60px auto;
-	padding: 20px;
+/* ===== セクション ===== */
+section {
+    margin: 60px 0;
 }
 
-.menu-title {
-	text-align: centnr;
-	border-bottom: 2px solid #3e2723;
-	padding-bottom: 10px;
-	margin-bottom: 50px;
+/* ===== ボタン ===== */
+.btn {
+    display: inline-block;
+    background-color: #d4af37; /* 金 */
+    color: #000000; /* 黒文字 */
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
-.menu-category {
-	margin-bottm: 50px;
+.btn:hover {
+    background-color: #ffd700;
 }
 
-.menu-category h3 {
-	color: #a1887f;
-	border-left: 4px solid #3e2723;
-	padding-left: 15px;
+/* ===== カード（サービスなど） ===== */
+.card {
+    background-color: #111111;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
     margin-bottom: 20px;
 }
 
-/*コミュニティ（Discod）*/
-.community {
-	background-color: 1a1a1a;
-	padding: 80px 20px;
-	text-align: center;
-	border-top: 1px solid #3e2723;
-}
-
-.biscord-btn {
-	display: inline-block;
-	backgroumd-color: #5865F2;
-	color: white;
-	padding: 15px 40px;
-	text-descoratin: none;
-	boder-radius: 30px; /* 角を丸くしてモダンに */
-	font-weight: bold;
-	margin-top: 25px;
-	transition: 0.3s;
-}
-
-.discord-btn:hover {
-	background-color: #4752c4;
-	transform: translateY(-2px);
-}
-
-.btn {
-	border: 1px solid #d3d3d3;
-	color: #d3d3d3;
-	padding: 10px  30px;
-}
-
+/* ===== フッター ===== */
 footer {
-	text-aligon: center;
-	padding: 30px;
-	font-size: 0.9rem;
+    background-color: #111111;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ===== レスポンシブ ===== */
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
