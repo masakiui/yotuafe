@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
+    
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-color: #0d0d0d; /* 黒 */
     color: #c9a96a; /* 金 */
@@ -22,6 +22,7 @@ header {
     background-color: #0f2a1f; /* 深緑 */
     color: #e5e5e5; /* 白 */
     padding: 15px 0;
+
 }
 
 header .container {
@@ -32,15 +33,15 @@ header .container {
 
 /* ロゴ */
 .logo {
-    margib: 0 40px;
+    margin: 0 40px;
 }
 
-.rogo a {
+.logo a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90px;
-    heigth: 90px;
+    height: 90px;
     border: 2px solid #c9a96a;
     border-radius: 50%;
     color:c9a96a;
