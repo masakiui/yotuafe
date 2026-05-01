@@ -10,26 +10,39 @@ body {
     
 }
 
-/* ===== コンテナ（中央寄せ） ===== */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* ===== ヘッダー ===== */
-header {
-    background-color: #0f2a1f; /* 深緑 */
-    color: #e5e5e5; /* 白 */
-    padding: 15px 0;
-
-}
-
+/* 1. ヘッダーの中身を中央に寄せる */
 header .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center;    /* ★これでロゴやメニューが中央に */
+    text-align: center;
 }
+
+/* 2. ナビゲーション（メニュー）の項目を中央に寄せる */
+nav ul {
+    display: flex;
+    justify-content: center; /* ★横並びのメニューを中央に */
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+}
+
+/* 3. メインコンテンツ（セクション）を中央に寄せる */
+section {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center;    /* ★中身を中央に */
+    text-align: center;     /* ★文字を中央に */
+}
+
+/* 4. コンテナ自体の設定（再確認） */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;         /* 箱自体を中央に */
+    width: 100%;
+}
+
+
 
 /* ロゴ */
 .logo {
