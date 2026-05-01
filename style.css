@@ -2,10 +2,12 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-color: #0d0d0d; /* 黒 */
     color: #c9a96a; /* 金 */
     line-height: 1.7;
+    
 }
 
 /* ===== コンテナ（中央寄せ） ===== */
