@@ -16,7 +16,10 @@ header .container {
     flex-direction: column; /* 縦に並べる */
     align-items: center;    /* ★これでロゴやメニューが中央に */
     text-align: center;
-     background-color: #5A1E24;
+}
+header{
+    background-color: #5A1E24;
+    color: #E0C46C;
 }
 
 /* 2. ナビゲーション（メニュー）の項目を中央に寄せる */
